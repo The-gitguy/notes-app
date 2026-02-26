@@ -1,3 +1,15 @@
+/**
+ * Imports the shared library for Jenkins pipeline.
+ * 
+ * The 'Shared' library contains reusable pipeline code, functions, and variables
+ * that can be utilized across multiple Jenkinsfile definitions.
+ * 
+ * The underscore (_) suffix indicates that this library is being loaded without
+ * specifying a version, so it will use the default version configured in Jenkins.
+ * 
+ * Usage: This statement must appear at the beginning of the Jenkinsfile before
+ * any pipeline code that references functions or variables from the shared library.
+ */
 @Library('Shared')_
 pipeline{
     agent { label 'dev-server'}
